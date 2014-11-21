@@ -1,0 +1,13 @@
+set-window-option -g window-status-current-bg default
+set-window-option -g window-status-current-fg colour196
+set-window-option -g window-status-current-attr bright
+
+# Mouse mode
+set -g mode-mouse on
+set -g mouse-resize-pane on
+set -g mouse-select-pane on
+set -g mouse-select-window on
+
+# Fix clipboard isues
+# Run `brew install reattach-to-user-namespace`
+set-option -g default-command "reattach-to-user-namespace -l zsh"

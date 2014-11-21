@@ -1,0 +1,64 @@
+" Open NERDTree file browser to see [d]irectory structure
+nnoremap <Leader>d :NERDTree<CR>
+" [R]eveal current file in NERDTree
+nnoremap <Leader>r :NERDTreeFind<CR>
+" [F]ind a file in CtrlP
+nnoremap <Leader>f :CtrlP<CR>
+" [W]rite
+nnoremap <Leader>w :w<CR>
+" [S]earch project
+noremap <Leader>s :Ag<space>
+" Toggle relative line numbers
+nnoremap <leader>\ :set rnu!<CR>
+
+" Add RuboCop to syntastic checkers
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+let g:syntastic_ruby_exec='/Users/max/.gem/ruby/2.1.3/bin/rubocop'
+
+" Show files that begin with . in NERDTree
+let NERDTreeShowHidden=1
+
+" Easier to escape
+imap jk <Esc>
+
+" Enable scrolling with mouse
+set mouse=a
+
+" Copy to system clipboard
+set clipboard=unnamed
+
+" Backup files
+set backup
+set writebackup
+if isdirectory($HOME . '/.vim/backup') == 0
+  :silent !mkdir -p ~/.vim/backup
+endif
+set backupdir=~/.vim/backup//
+
+" Keep swp files out of projects
+set swapfile
+if isdirectory($HOME . '/.vim/swp') == 0
+  :silent !mkdir -p ~/.vim/swp
+endif
+set directory=~/.vim/swp//
+
+" Keep undo files
+set undofile
+if isdirectory($HOME . '/.vim/undo') == 0
+  :silent !mkdir -p ~/.vim/undo
+endif
+set undodir=~/.vim/undo//
+
+" Make search case insensitive
+set ignorecase
+" unless the search term contains caps
+set smartcase
+
+" Use relative line numbers
+set relativenumber
+
+" Quicker window movement
+nnoremap <Down> <C-w>j
+nnoremap <Up> <C-w>k
+nnoremap <Left> <C-w>h
+nnoremap <Right> <C-w>l

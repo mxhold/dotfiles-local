@@ -1,0 +1,18 @@
+[user]
+  name = Max Holder
+  email = mxhold@gmail.com
+[credential]
+  helper = osxkeychain
+[alias]
+    st = status
+    ci = commit --verbose
+    br = branch
+    co = checkout
+    df = diff
+    dc = diff --cached
+    who = shortlog -s --
+    pl = pull
+    ps = push
+    plr = pull --rebase
+    a = add
+    r = reset
