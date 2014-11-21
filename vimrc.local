@@ -57,10 +57,4 @@ set smartcase
 " Use relative line numbers
 set relativenumber
 
-" Quicker window movement
-nnoremap <Down> <C-w>j
-nnoremap <Up> <C-w>k
-nnoremap <Left> <C-w>h
-nnoremap <Right> <C-w>l
-
 colorscheme grb256
