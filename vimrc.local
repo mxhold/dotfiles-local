@@ -22,6 +22,7 @@ imap jk <Esc>
 
 " Enable scrolling with mouse
 set mouse=a
+set ttymouse=xterm2
 
 " Copy to system clipboard
 set clipboard=unnamed
