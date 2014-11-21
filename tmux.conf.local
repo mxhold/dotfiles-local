@@ -11,3 +11,6 @@ set -g mouse-select-window on
 # Fix clipboard isues
 # Run `brew install reattach-to-user-namespace`
 set-option -g default-command "reattach-to-user-namespace -l zsh"
+
+# Switch to previous window
+bind w last-window
