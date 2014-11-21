@@ -26,3 +26,5 @@
   ```
   env RCRC=$HOME/dotfiles-local/rcrc rcup
   ```
+
+5. Edit `gitconfig.local` if your name isn't Max Holder.

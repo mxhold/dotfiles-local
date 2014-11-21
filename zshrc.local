@@ -1,7 +1,12 @@
 export PATH=/usr/local/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-# added by travis gem
-[ -f /Users/max/.travis/travis.sh ] && source /Users/max/.travis/travis.sh
+
+if [[ -f /usr/local/share/chruby/chruby.sh ]]; then
+  source /usr/local/share/chruby/chruby.sh
+fi
+if [[ -f /usr/local/share/chruby/auto.sh ]]; then
+  source /usr/local/share/chruby/auto.sh
+fi
+
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
