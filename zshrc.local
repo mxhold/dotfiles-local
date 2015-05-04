@@ -13,3 +13,5 @@ fi
 
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
+# Keep duplicates in history for analysis
+unsetopt hist_ignore_all_dups
