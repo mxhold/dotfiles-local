@@ -34,6 +34,11 @@ nnoremap <Leader>w :w<CR>
 " Toggle paste mode
 nnoremap <Leader>p :set paste!<CR>
 
+" Turn off markdown spellcheck
+autocmd FileType markdown setlocal nospell
+" Turn off syntax highlighting for markdown files
+" It doesn't detect kramdown code blocks (made with ~~~) or other rarer features
+autocmd FileType markdown setlocal syntax=OFF
 
 " Add RuboCop to syntastic checkers
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
