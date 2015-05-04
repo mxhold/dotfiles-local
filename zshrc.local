@@ -1,17 +1,2 @@
-export PATH=/usr/local/bin:$PATH
-export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="/Applications/Praat.app/Contents/MacOS/:$PATH"
-
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
-if [[ -f /usr/local/share/chruby/chruby.sh ]]; then
-  source /usr/local/share/chruby/chruby.sh
-fi
-if [[ -f /usr/local/share/chruby/auto.sh ]]; then
-  source /usr/local/share/chruby/auto.sh
-fi
-
-[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
-
 # Keep duplicates in history for analysis
 unsetopt hist_ignore_all_dups
