@@ -1,0 +1,16 @@
+# Git
+# A subset of https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh
+alias gst='git status'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gl='git pull'
+alias gup='git pull --rebase'
+alias gp='git push'
+alias gc='git commit --verbose'
+alias gca='git commit --verbose --amend'
+alias gco='git checkout'
+alias grv='git remote -v'
+alias gba='git branch --all'
+alias ga='git add'
+alias gaa='git add --all'
+alias gm='git merge'

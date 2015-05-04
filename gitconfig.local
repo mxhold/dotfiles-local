@@ -3,9 +3,3 @@
   email = mxhold@gmail.com
 [credential]
   helper = osxkeychain
-[alias]
-  d = diff
-  dc = diff --cached
-  br = branch
-  plr = pull --rebase
-
