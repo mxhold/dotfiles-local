@@ -1,0 +1,8 @@
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'ngmy/vim-rubocop'
+Bundle 'rking/ag.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-ragtag'
+Bundle 'elixir-lang/vim-elixir'
