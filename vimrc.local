@@ -1,15 +1,39 @@
-" Open NERDTree file browser to see [d]irectory structure
-nnoremap <Leader>d :NERDTree<CR>
+" Toggle between text width of 80 and no text width
+function! TextWidthToggle()
+  if &textwidth
+    setlocal textwidth=0
+  else
+    setlocal textwidth=80
+  endif
+  " Echo current setting
+  set textwidth
+endfunction
+nnoremap <Leader>sw :call TextWidthToggle()<CR>
+
+" Use relative line numbers with absolute number on current line
+set relativenumber
+set number
+" Toggle between above setting and no numbering at all
+function! LineNumberToggle()
+  if &number
+    setlocal nonumber
+    setlocal norelativenumber
+  else
+    setlocal number
+    setlocal relativenumber
+  endif
+endfunction
+nnoremap <Leader>sn :call LineNumberToggle()<CR>
+
 " [R]eveal current file in NERDTree
 nnoremap <Leader>r :NERDTreeFind<CR>
 " [F]ind a file in CtrlP
 nnoremap <Leader>f :CtrlP<CR>
 " [W]rite
 nnoremap <Leader>w :w<CR>
-" [S]earch project
-noremap <Leader>s :Ag<space>
-" Toggle relative line numbers
-nnoremap <leader>\ :set rnu!<CR>
+" Toggle paste mode
+nnoremap <Leader>p :set paste!<CR>
+
 
 " Add RuboCop to syntastic checkers
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
@@ -54,7 +78,5 @@ set ignorecase
 " unless the search term contains caps
 set smartcase
 
-" Use relative line numbers
-set relativenumber
 
 colorscheme grb256
