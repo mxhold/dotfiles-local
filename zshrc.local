@@ -1,2 +1,6 @@
 # Keep duplicates in history for analysis
 unsetopt hist_ignore_all_dups
+
+# Prevent autocompleting home directories after cd
+# See: https://unix.stackexchange.com/questions/45518/oh-my-zsh-completion-on-home-directory-names
+unsetopt cdable_vars
