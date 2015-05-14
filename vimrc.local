@@ -85,3 +85,7 @@ set smartcase
 
 
 colorscheme grb256
+
+" Open NERDTree automatically if vim started without file
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
