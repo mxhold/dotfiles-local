@@ -1,6 +1,7 @@
 export PATH=/usr/local/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Applications/Praat.app/Contents/MacOS/:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
